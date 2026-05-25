@@ -1352,7 +1352,7 @@ function bookCardHTML(b, i) {
     const pct = Math.min(100, Math.round(b.pagActual / b.totalPages * 100));
     progressHtml = '<div style="margin-top:8px;"><div style="height:3px;background:var(--border);border-radius:2px;overflow:hidden;"><div style="height:3px;background:var(--gold);border-radius:2px;width:' + pct + '%"></div></div><div style="font-size:10px;color:var(--text-dim);margin-top:3px;">' + pct + '% · p.' + b.pagActual + '</div></div>';
   }
-return '<div class="book-card ' + isFav + '" onclick="openBook(\'' + b.id + '\')" style="animation-delay:' + (i*0.04) + 's">' +
+return "<div class='book-card " + isFav + "' onclick=\"openBook('" + b.id + "')\" style='animation-delay:" + (i*0.04) + "s'>" +
     coverImg +
     '<div class="book-cover-ph" ' + coverPhStyle + '>📖</div>' +
     '<div class="book-info">' +
